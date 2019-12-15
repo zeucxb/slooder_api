@@ -7,6 +7,7 @@ class HeroesController extends ResourceController {
     {'id': 13, 'name': 'Bombasto'},
     {'id': 14, 'name': 'Celeritas'},
     {'id': 15, 'name': 'Magneta'},
+    {'id': 16, 'name': 'Eliseu'},
   ];
 
   @Operation.get()
