@@ -6,21 +6,10 @@ import 'controllers/heroes_controller.dart';
 import 'heroes.dart';
 
 class HeroesChannel extends ApplicationChannel {
-  Future<void> registerDB() async {
-    final database =
-        Db('mongodb://<zeucxb>:<Zeu16051997>@ds111103.mlab.com:11103/heroes');
-
-    await database.open();
-
-    GetIt.I.registerLazySingleton<Db>(() => database);
-  }
-
   @override
   Future prepare() async {
     logger.onRecord.listen(
         (rec) => print("$rec ${rec.error ?? ""} ${rec.stackTrace ?? ""}"));
-
-    await registerDB();
   }
 
   @override
