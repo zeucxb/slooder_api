@@ -1,4 +1,4 @@
-# heroes
+# Slooder
 
 ## Running the Application Locally
 

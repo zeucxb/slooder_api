@@ -1,12 +1,12 @@
-import 'package:heroes/heroes.dart';
+import 'package:slooder/slooder.dart';
 import 'package:aqueduct_test/aqueduct_test.dart';
 
-export 'package:heroes/heroes.dart';
+export 'package:slooder/slooder.dart';
 export 'package:aqueduct_test/aqueduct_test.dart';
 export 'package:test/test.dart';
 export 'package:aqueduct/aqueduct.dart';
 
-/// A testing harness for heroes.
+/// A testing harness for slooder.
 ///
 /// A harness for testing an aqueduct application. Example test file:
 ///
@@ -19,14 +19,10 @@ export 'package:aqueduct/aqueduct.dart';
 ///           });
 ///         }
 ///
-class Harness extends TestHarness<HeroesChannel> {
+class Harness extends TestHarness<SlooderChannel> {
   @override
-  Future onSetUp() async {
-
-  }
+  Future onSetUp() async {}
 
   @override
-  Future onTearDown() async {
-
-  }
+  Future onTearDown() async {}
 }

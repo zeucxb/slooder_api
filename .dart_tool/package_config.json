@@ -398,13 +398,13 @@
       "languageVersion": "2.0"
     },
     {
-      "name": "heroes",
+      "name": "slooder",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     }
   ],
-  "generated": "2019-12-15T16:41:40.190088Z",
+  "generated": "2020-01-03T03:50:50.461727Z",
   "generator": "pub",
   "generatorVersion": "2.7.0"
 }

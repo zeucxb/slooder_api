@@ -1,9 +1,10 @@
-import 'package:heroes/heroes.dart';
+import 'package:aqueduct/aqueduct.dart';
+import 'package:slooder/slooder.dart';
 
 Future main() async {
-  final app = Application<HeroesChannel>()
-      ..options.configurationFilePath = "config.yaml"
-      ..options.port = 8888;
+  final app = Application<SlooderChannel>()
+    ..options.configurationFilePath = "config.yaml"
+    ..options.port = 8888;
 
   final count = Platform.numberOfProcessors ~/ 2;
   await app.start(numberOfInstances: count > 0 ? count : 1);

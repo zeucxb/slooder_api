@@ -1,8 +1,8 @@
-import 'package:heroes/heroes.dart';
-import 'package:heroes/models/hero_model.dart';
+import 'package:slooder/slooder.dart';
+import 'package:slooder/models/hero_model.dart';
 
-class HeroesController extends ResourceController {
-  HeroesController(this.context);
+class HeroController extends ResourceController {
+  HeroController(this.context);
 
   final ManagedContext context;
 
